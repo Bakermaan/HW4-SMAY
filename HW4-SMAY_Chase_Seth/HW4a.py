@@ -2,6 +2,29 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import norm
 
+"""In this code, we are providing a comprehensive visualization of probability density functions (PDFs)
+and cumulative distribution functions (CDFs) for two distinct normal distributions. The first distribution
+is the standard normal distribution N(0,1), and the second is a normal distribution N(175, 3). The code
+uses numpy for numerical operations, matplotlib for plotting, and scipy's norm module for statistical
+calculations.
+
+For the standard normal distribution, the parameters are mu=0, and it's the mean, and sigma=1,
+and it's the standard deviation. The PDF and the CDF are calculated for a range of x values from -4 to 4.
+The code then visualizes the PDF with a blue-shaded region that represents the probability of X being less
+than or equal to -0.5, and it's annotated with the corresponding probability. The CDF plot includes a red
+point indicating the probability of X being less than or equal to -0.5.
+
+For the normal distribution, the parameters are mu=175, and once again, it's the mean, and sigma=3, and
+it's once again the standard deviation. The PDF and CDF are calculated for a range of x-values within four
+standard deviations from the mean. The code will then visualize the PDF with a blue-shaded region that will
+represent the probability of X being greater than 181, and it is annotated with the corresponding probability.
+The CDF plot includes a red point that indicates the probability of X being less than or equal to 181. It is
+ then going to use all of the inputted data to create multiple plots using the matplotlib function.
+
+Both sets of visualizations include titles, labels, and annotations for clarity, and we are able to choose
+what colors that we want for our axes and titles and labels for our graph.The goal is to illustrate the 
+probability distribution characteristics and how to interpret probabilities in the context of different
+normal distributions."""
 # Parameters for the standard normal distribution N(0,1)
 mu, sigma = 0, 1
 x_values = np.linspace(-4, 4, 1000)
